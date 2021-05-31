@@ -3,10 +3,8 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                 sh'''
-                 echo "PATH = ${PATH}"
-                 echo "MAVEN_HOME = ${MAVEN_HOME}"
-                 '''
+                 echo 'Initialize the code file'
+                
                 }
             } 
               
