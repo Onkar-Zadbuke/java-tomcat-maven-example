@@ -4,10 +4,10 @@ pipeline {
         stage ('Build Servlet Project') {
             steps {
                 /*For windows machine */
-               bat  'mvn clean Package'
+               bat  'mvn clean package'
 
                 /*For Mac & Linux machine */
-               // sh  'mvn clean Package'
+               // sh  'mvn clean package'
             }
 
             post{
