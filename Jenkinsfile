@@ -1,6 +1,8 @@
 pipeline {
     agent any
-	
+	environment {
+		PATH = C:\_Tools\apache-maven-3.8.1\bin:$PATH	
+	}
     stages {
         stage ('Build Servlet Project') {
             steps {
